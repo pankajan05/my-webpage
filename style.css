@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    height: 100vh;
+
 }
 
 #particles-js {
@@ -22,10 +22,12 @@ body{
     transform-origin: bottom center;
 }
 
-.bowl: before{
+
+
+.bowl:before{
     content: '';
     position: absolute;
-    top: 0;
+    top: -10px;
     left: 50%;
     transform: translate(-50%);
     width: 40%;
@@ -38,11 +40,24 @@ body{
 .bowl:after{
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 30%;
+    left: 50%;
     transform: translate(-50%,-50%);
     width: 150px;
     height: 80px;
     background: rgba(255,255,255,0.05);
     border-radius: 50%;
+}
+
+.water
+{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    background: rgba(65,193,251,0.5);
+    border-bottom-right-radius: 150px;
+    border-bottom-left-radius: 150px;
+    transform-origin: bottom center;
 }
