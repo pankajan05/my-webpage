@@ -1,12 +1,30 @@
 body{
     margin: 0;
     padding: 0;
-
+    justify-content: center;
+    background-color: #000;
 }
 
 #particles-js {
     height: 100%;
     background: #262626;
+}
+
+p{
+    position: relative;
+    text-align: center;
+    font-family: sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2em;
+    letter-spacing: 4px;
+    overflow: hidden;
+    background: linear-gradient(90deg, #000,#fff, #000);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animateletter 3s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255,255,255,0.1);
 }
 
 .bowl{
@@ -143,5 +161,15 @@ img.fish
     }
     100%{
         transform: rotate(0deg);
+    }
+}
+
+@keyframes animateletter
+{
+    0%{
+        background-position: -500%;
+    }
+    100%{
+        background-position: 500%;
     }
 }
