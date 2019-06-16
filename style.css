@@ -20,6 +20,7 @@ body{
     border-radius: 50%;
     border: 4px solid #fff;
     transform-origin: bottom center;
+    animation: animate 5s linear infinite;
 }
 
 
@@ -59,7 +60,8 @@ body{
     background: rgba(65,193,251,0.5);
     border-bottom-right-radius: 150px;
     border-bottom-left-radius: 150px;
-    transform-origin: bottom center;
+    transform-origin: top center;
+    animation: animateWater 5s linear infinite;
 }
 
 .water:before
@@ -106,4 +108,40 @@ img.fish
         transform: translate(0,0) rotateY(0deg);
     }
     
+}
+
+@keyframes animate {
+    0%{
+        transform: translate(-50%,-50%) rotate(0deg);
+    }
+     25%{
+        transform: translate(-50%,-50%) rotate(15deg);
+    }
+     50%{
+        transform: translate(-50%,-50%) rotate(0deg);
+    }
+     75%{
+        transform: translate(-50%,-50%) rotate(-15deg);
+    }
+     100%{
+        transform: translate(-50%,-50%) rotate(0deg);
+    }
+}
+
+@keyframes animateWater{
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(-20deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    75%{
+        transform: rotate(20deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
 }
