@@ -12,8 +12,8 @@ body{
 
 .flip{
     position: absolute;
-    top:10%;
-    left: 80%;
+    top:90%;
+    left: 90%;
     transform: translate(-50%,-50%);
     width: 200px;
     height: 60px;
@@ -59,7 +59,7 @@ a:hover span.back{
 }
 
 span.center{
-    background: linear-gradient(to left, #c31a5b,#7129bd);
+    background: linear-gradient(to left, #0020ff,rgba(65,193,251,0.5));
 }
 
 span.center:before{
@@ -69,7 +69,7 @@ span.center:before{
     left:0;
     width:100%;
     height: 100%;
-    background: linear-gradient(to left, #ffdd1f, #c31a5b);
+    background: linear-gradient(to left, #0020ff, rgba(65,193,251,0.5));
     border-radius: 30px;
     transform: translateZ(-1px);
 }
