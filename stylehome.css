@@ -1,13 +1,15 @@
-bod{
+body{
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
 
 section{
+    position: absolute;
     width: 100%;
     height: 100%;
     background: radial-gradient(#333,#000);
+   
 }
 
 section img{
@@ -95,7 +97,7 @@ section img{
     animation-delay: -5s;
 }
 .set div:nth-child(10){
-    left: 95%;
+    left: 85%;
     animation: animate 4s linear infinite;
     animation-delay: -12s;
 }
@@ -131,15 +133,18 @@ section img{
     }
     100%{
         transform: translateX(-20px) rotate(225deg);
-        top:110%
+        top:100%
     }
 }
 
 .set2{
+    position:absolute;
     transform: scale(2) rotateY(180deg);
     filter: blur(2px);
+    
 }
 .set3{
+    position: absolute;
     transform: scale(0.8) rotateX(180deg);
     filter: blur(4px);
 }
