@@ -2,6 +2,7 @@ body{
     margin: 0;
     padding: 0;
     background: #000;
+    font-family: sans-serif;
 }
 
 section{
@@ -166,9 +167,10 @@ h2{
 
 .shadow
 {
+    
     top: 105%;
     left: 50px;
-    position: absolute;
+    position: relative;
     width: 400px;
     height: 250px;
     background: linear-gradient(0deg,#000,#262626);
@@ -178,9 +180,44 @@ h2{
 .shadow:before {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    background: linear-gradient(45deg,#fb0094,#0000ff);
+    top: -2px;
+    left: -2px;
+    background: linear-gradient(45deg,#fb0094,#0000ff,#00ff00,#ffff00,#ff0000,#fb0094);
+    background-size: 400%;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    z-index: -1;
+    animation: animateframe 20s linear infinite;
+}
+
+.shadow:after {
+    filter: blur(20px);
+}
+
+@keyframes animateframe {
+    0%{
+        background-position: 0 0;
+    }
+    50%{
+        background-position: 400% 0;
+    }
+    100%{
+        background-position: 0 0;
+    }
+}
+
+.container {
+    position: relative;
     width: 100%;
-    height: 100%;
+    height: 300px;
+    margin: 240px auto;
+}
+
+.container .box {
+    position: relative;
+    width: calc(400px - 30px);
+    height: calc(300px - 30px);
+    background: #fff;
+    float: left;
+    margin: 15px;
 }
