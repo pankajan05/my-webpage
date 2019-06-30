@@ -167,12 +167,11 @@ h2{
 
 .shadow
 {
-    
-    right: 10%;
-    top: 100vh;
-    left: 33%;
+
+    top: 110vh;
+    left: 30%;
     position: relative;
-    width: 400px;
+    width: 35%;
     height: 250px;
     background: linear-gradient(0deg,#000,#262626);
 }
@@ -218,15 +217,16 @@ h2{
 
 .container {
     position:relative;
-    width: 90%;
+    width: 95%;
     height: 300px;
-    margin: 700px;
-    margin-left: 40px;
+    margin-top: 130vh;
+    margin-left: 5%;
+    overflow: hidden;
 }
 
 .container .box {
     position: relative;
-    width: calc(400px - 30px);
+    width: calc(30% - 30px);
     height: calc(300px - 30px);
     background: #00f;
     float: left;
