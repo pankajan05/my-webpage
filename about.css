@@ -10,6 +10,7 @@ body{
 
 .cardabout{
     position: absolute;
+    margin: 100vh 0 0 0;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -101,3 +102,45 @@ body{
 .social-icons a:hover {
     background: #e91e63;
 }
+
+.container{
+    position: absolute;
+    margin:0 0 0 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: #000;
+}
+
+.container div{
+    position: relative;
+    display: block;
+    float: left;
+    width: 2%;
+    height: 2vh;
+    background: url(img/angular.png);
+    background-size:100%; 
+    background-repeat: no-repeat;
+}
+
+.container div:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(img/coral.jpg);
+    background-attachment: fixed;
+    transform-style: preserve-3d;
+    transform-origin: top;
+    transform:  perspective(100px) rotateX(0deg) translateY(0%);
+    transition: 0.5s linear;
+}
+
+.container div.flip:before{
+    transform:perspective(1000px) rotateX(90deg) translateY(-50%);
+}
+
+
